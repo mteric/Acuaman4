@@ -1,0 +1,23 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado cuando el botón está presionado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Bordes redondeados -->
+            <solid android:color="#FF5722" /> <!-- Color de fondo cuando está presionado -->
+        </shape>
+    </item>
+    <!-- Estado cuando el botón está enfocado -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Bordes redondeados -->
+            <solid android:color="#FF9800" /> <!-- Color de fondo cuando está enfocado -->
+        </shape>
+    </item>
+    <!-- Estado por defecto del botón -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="15dp" /> <!-- Bordes redondeados -->
+            <solid android:color="#2484C6" /> <!-- Color de fondo por defecto -->
+        </shape>
+    </item>
+</selector>

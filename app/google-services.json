@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377341159601",
+    "project_id": "aquascale-5ba56",
+    "storage_bucket": "aquascale-5ba56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377341159601:android:8f6e17b5c32f0c60821a90",
+        "android_client_info": {
+          "package_name": "dev.cedes.acuaman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOPzl7XY9OXPNGuR4lafeEfb0rQYllcn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

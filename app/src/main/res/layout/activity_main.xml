@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verdad">
+
+
+
+    <RelativeLayout
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:id="@+id/prin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/aquascale"
+            android:paddingEnd="50dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="115sp"
+            android:id="@+id/busto"
+            android:layout_below="@+id/prin"/>
+
+
+
+        <TextView
+
+
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vista"
+            android:text="BIENVENIDOS "
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="@font/texto"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/busto"
+            />
+
+        <TextView
+
+            android:padding="1dp"
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vis"
+            android:text="AQUASCALE "
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="@font/texto"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vista"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:id="@+id/bust"
+            android:layout_below="@+id/vis"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/clas"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bust"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_user"
+            app:endIconTint="@color/black"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorb"
+            android:background="@drawable/rounded_borders">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:inputType="textEmailAddress"
+                android:hint="CORREO"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:textColor="#000000"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:id="@+id/bustt"
+
+            android:layout_below="@+id/clas"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/clas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bustt"
+            android:hint="CONTRASEÑA"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            android:background="@drawable/rounded_borders"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/colorb"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000000"
+                 />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/vistapa"
+            android:layout_below="@+id/clas2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/vistapa"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_send_data"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="#094070"
+                android:elevation="15dp"
+                android:text="INICIAR SESIÓN"
+                android:textSize="12dp"
+                app:cornerRadius="20sp"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/btn_send_dataa"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="#094070"
+                android:elevation="15dp"
+                android:text="REGÍSTRATE"
+                android:textSize="12dp"
+                app:cornerRadius="20sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

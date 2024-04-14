@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:id="@+id/categotriasfragments">
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/principal2">
+
+        <Spinner
+            android:id="@+id/IdDisEncontrados"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:visibility="visible"/>
+
+
+
+        <ImageView
+            android:id="@+id/buscarimagen"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buscar"
+            android:layout_below="@+id/principal2"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            tools:ignore="NotSibling" />
+        <Button
+            android:fontFamily="@font/texto"
+            android:textAlignment="center"
+            android:id="@+id/IdBtnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR DISPOSITIVO"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="@drawable/custom_button_background"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/buscarimagen"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_below="@+id/IdBtnBuscar"
+            android:id="@+id/textViewDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distancia: "
+            android:textColor="#1A4876"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/IdBtnBuscar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/rounded_background"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <Button
+                android:fontFamily="@font/texto"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_background"
+                android:id="@+id/IdBtnConectar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:text="CONECTAR"/>
+
+            <Button
+                android:fontFamily="@font/texto"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_background"
+                android:id="@+id/IdBtnDesconectar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="40dp"
+                android:text="DESCONECTAR"
+               />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

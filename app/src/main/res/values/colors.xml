@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorb">#FFFFFFFF</color>
+    <color name="colorbb">#45BBFF</color>
+    <color name="colorbbt">#DAA3A3</color>
+    <color name="plubial">#8C8FBF</color>
+
+
+
+        <color name="colorBotonEncendido">#FF5733</color> <!-- Color cuando el LED está encendido -->
+        <color name="colorBotonApagado">#33FF57</color> <!-- Color cuando el LED está apagado -->
+
+
+</resources>

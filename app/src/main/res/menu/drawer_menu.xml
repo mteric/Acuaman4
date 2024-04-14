@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="principal">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:title="Home"
+                android:icon="@drawable/ic_homes" />
+            <item
+                android:id="@+id/categotrias"
+                android:title="Categorias"
+                android:icon="@drawable/ic_categoryy" />
+            <item
+                android:id="@+id/about"
+                android:title="ABOUT"
+                android:icon="@drawable/ic_aboutt" />
+
+            <item
+                android:id="@+id/personas"
+                android:title="CERRAR SESION"
+                android:icon="@drawable/ic_exit" />
+
+
+
+        </menu>
+    </item>
+
+</menu>
