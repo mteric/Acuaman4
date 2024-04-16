@@ -47,8 +47,9 @@
             android:background="@drawable/reloj"
             tools:ignore="UnknownId" />
 
+
         <ImageView
-            android:id="@+id/imagenn"
+            android:id="@+id/imagen2"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_centerHorizontal="true"
@@ -60,7 +61,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/imagenn"
+            android:layout_below="@id/imagen2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="80dp"
             android:background="@drawable/rounded_background"

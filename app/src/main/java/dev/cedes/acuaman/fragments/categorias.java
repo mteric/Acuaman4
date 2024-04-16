@@ -37,7 +37,7 @@ import dev.cedes.acuaman.R;
 
 public class categorias extends Fragment {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "CategoriasFragment";
     private static final UUID BT_MODULE_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     private static final int REQUEST_ENABLE_BT = 1;
     private static final int REQUEST_BLUETOOTH_CONNECT_PERMISSION = 3;
@@ -48,8 +48,8 @@ public class categorias extends Fragment {
     private ConnectedThread MyConexionBT;
     private ArrayList<String> mNameDevices = new ArrayList<>();
     private ArrayAdapter<String> deviceAdapter;
-    Button IdBtnBuscar, IdBtnConectar, IdBtnLuz1on, IdBtnLuz3ON, IdBtnLuz2on, IdBtnLuz4ON, IdBtnLuzALLON, IdBtnDesconectar;
-    Spinner IdDisEncontrados; //se ingresa el SPINNER
+    Button IdBtnBuscar, IdBtnConectar, IdBtnDesconectar;
+    Spinner IdDisEncontrados;
     TextView textViewDistance;
 
     @Override
@@ -59,7 +59,7 @@ public class categorias extends Fragment {
         IdBtnBuscar = view.findViewById(R.id.IdBtnBuscar);
         IdBtnConectar = view.findViewById(R.id.IdBtnConectar);
         IdBtnDesconectar = view.findViewById(R.id.IdBtnDesconectar);
-        IdDisEncontrados = view.findViewById(R.id.IdDisEncontrados); ///SE LE COLOCA SU ID
+        IdDisEncontrados = view.findViewById(R.id.IdDisEncontrados);
 
         deviceAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, mNameDevices);
         deviceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -232,8 +232,6 @@ public class categorias extends Fragment {
             MyConexionBT.start();
 
             showToast("Conexión exitosa.");
-
-
         } catch (IOException e) {
             showToast("Error al conectar con el dispositivo.");
         }

@@ -1,42 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:paddingTop="?attr/actionBarSize">
 
-    <EditText
-        android:id="@+id/editTextMacAddress"
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/colorb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Dirección MAC"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        tools:ignore="MissingConstraints"
+        android:id="@+id/principal3">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/centrado"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:background="@drawable/aquascale"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/SOMOS"
+            android:id="@+id/textViewEnlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAGINA OFICIAL 'CLIC' "
+            android:textColor="#3600FA"/>
+        <TextView
+            android:textSize="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textosalir"
+            android:id="@+id/SOMOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somos una empresa responsable con el medio ambiente y los recursos que estan en ella y sobre todo, el recurso del agua. "
+            android:textColor="#000000"/>
 
-    <Button
-        android:id="@+id/connectButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conectar"
-        android:layout_below="@id/editTextMacAddress"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="21dp"
+            android:fontFamily="@font/texto"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button_background"
+            android:text="¿QUIENES SOMOS?"
+            android:layout_below="@+id/centrado"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textosalir"
+            tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textViewDistance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Distancia:"
-        android:layout_below="@id/connectButton"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"/>
+        <RelativeLayout
+            android:id="@+id/nose"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEnlace"
+            android:background="@drawable/rounded_background"
+            tools:ignore="NotSibling">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                tools:ignore="NotSibling" />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/openUrlButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abrir URL"
-        android:layout_below="@id/textViewDistance"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"/>
 
-</RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorbb"
+            android:layout_marginTop="1044dp"
+            android:layout_below="@+id/nose"
+            android:id="@+id/ultimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling">
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
