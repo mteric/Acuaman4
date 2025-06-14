@@ -12,6 +12,7 @@
         <item name="color">@color/colorb</item>
 
     </style>
+
     <style name="SpinnerStyle">
         <!-- Color de fondo del spinner -->
         <item name="android:background">#00E2FF</item>
@@ -19,7 +20,11 @@
         <item name="android:textColor">#07E1C8</item>
         <!-- Otras propiedades que desees personalizar -->
     </style>
-
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Acuaman" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
 
 
 </resources>

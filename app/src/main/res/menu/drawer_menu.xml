@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="principal">
+    <item android:title="ACUASCALE">
         <menu>
             <item
                 android:id="@+id/home"
-                android:title="Home"
+                android:title="HOME"
                 android:icon="@drawable/ic_homes" />
             <item
                 android:id="@+id/categotrias"
-                android:title="Categorias"
+                android:title="CATEGORIAS"
                 android:icon="@drawable/ic_categoryy" />
             <item
                 android:id="@+id/about"

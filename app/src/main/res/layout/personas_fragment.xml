@@ -39,7 +39,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/textosalir"
-           tools:ignore="HardcodedText" />
+            />
        <LinearLayout
 
            android:id="@+id/centrado2"
@@ -61,7 +61,7 @@
                android:layout_marginEnd="15dp"
                android:text="CERRAR SESION"
                android:textAlignment="center"
-               android:textSize="12dp"
+               android:textSize="12sp"
                android:textStyle="bold"
                android:background="@drawable/custom_button_background"
                android:textColor="@color/white"
@@ -76,7 +76,7 @@
                android:layout_marginEnd="15dp"
                android:text="CANCELAR"
                android:textAlignment="center"
-               android:textSize="12dp"
+               android:textSize="12sp"
                android:textStyle="bold"
                android:background="@drawable/custom_button_background"
                android:textColor="@color/white"
@@ -98,7 +98,7 @@
 
        <LinearLayout
            android:background="@color/colorbb"
-           android:layout_marginTop="1044dp"
+           android:layout_marginTop="1004dp"
            android:layout_below="@+id/centrado2"
            android:id="@+id/ultimo"
            android:layout_width="match_parent"

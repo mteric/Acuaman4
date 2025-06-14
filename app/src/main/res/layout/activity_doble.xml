@@ -13,15 +13,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:id="@+id/salir"
-            android:text="ATRAS"
-            android:backgroundTint="@color/colorbbt"
+            android:background="@drawable/atras2"
             />
-
-
         <ImageView
 
             android:layout_width="150dp"
@@ -36,12 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="90sp"
             android:layout_below="@+id/prin" />
-
-
-
         <TextView
-
-
             android:layout_width="520dp"
             android:layout_height="wrap_content"
             android:id="@+id/vista"
@@ -75,46 +68,41 @@
             android:layout_height="25sp"
             android:id="@+id/bust"
             android:layout_below="@+id/vis"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/bust"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black"
+            app:endIconTint="@color/black"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_email"
+            android:background="@drawable/rounded_borders"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/colorb">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bust"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#000000"
+                android:backgroundTint="@color/white"
+                android:singleLine="true"
+                android:hint="CORREO ELECTRÓNICO"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"/>
 
-<com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_below="@+id/bust"
-    android:layout_height="wrap_content"
-    android:id="@+id/txt_name4"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-    android:textColorHint="@color/black"
-    app:endIconTint="@color/black"
-    app:endIconMode="custom"
-    app:endIconDrawable="@drawable/ic_email"
-    android:background="@drawable/rounded_borders"
-    android:layout_marginEnd="20dp"
-    android:layout_marginStart="20dp"
-    android:backgroundTint="@color/colorb">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bust"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="#000000"
-        android:backgroundTint="@color/white"
-        android:singleLine="true"
-        android:hint="CORREO ELECTRÓNICO"
-        android:inputType="textEmailAddress"
-        android:background="@android:color/transparent"/>
-
-</com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="25sp"
             android:id="@+id/bustt"
             android:layout_below="@+id/txt_name4"/>
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -144,58 +132,44 @@
                 android:singleLine="true"
                 android:background="@android:color/transparent"/>
         </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
         <View
             android:layout_width="match_parent"
             android:layout_height="25sp"
             android:id="@+id/busttt"
             android:layout_below="@+id/clas2"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clas3"
+            android:layout_below="@id/busttt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            android:background="@drawable/rounded_borders"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/colorb">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busttt"
+                android:fontFamily="sans-serif-condensed-medium"
 
-
-      <com.google.android.material.textfield.TextInputLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/clas3"
-          android:layout_below="@id/busttt"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-          android:textColorHint="@color/black"
-          app:endIconMode="password_toggle"
-          app:endIconTint="@color/black"
-          android:background="@drawable/rounded_borders"
-          android:layout_marginEnd="20dp"
-          android:layout_marginStart="20dp"
-          android:backgroundTint="@color/colorb">
-
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/txt_name2"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_below="@id/busttt"
-              android:fontFamily="sans-serif-condensed-medium"
-
-              android:textColor="#000000"
-              android:hint="CONTRASEÑA"
-              android:inputType="textPassword"
-              android:backgroundTint="@color/white"
-              android:singleLine="true"
-              android:background="@android:color/transparent"/>
-      </com.google.android.material.textfield.TextInputLayout>
-
-
-
+                android:textColor="#000000"
+                android:hint="CONTRASEÑA"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/white"
+                android:singleLine="true"
+                android:background="@android:color/transparent"/>
+        </com.google.android.material.textfield.TextInputLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="25sp"
             android:id="@+id/bustttt"
             android:layout_below="@+id/clas3"/>
-
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -209,7 +183,6 @@
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:backgroundTint="@color/colorb">
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_name3"
                 android:layout_width="match_parent"
@@ -224,16 +197,11 @@
                 android:singleLine="true"
                 android:background="@android:color/transparent"/>
         </com.google.android.material.textfield.TextInputLayout>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="15sp"
             android:id="@+id/busttttr"
             android:layout_below="@+id/clas4"/>
-
-
-
-
         <Button
             android:id="@+id/btn_send_dataaa"
             android:layout_width="match_parent"
@@ -244,16 +212,10 @@
             android:textColor="#094070"
             android:elevation="15dp"
             android:text="REGISTRADO"
-            android:textSize="14dp"
+            android:textSize="14sp"
             app:cornerRadius="20sp"
             android:layout_marginEnd="90dp"
             android:layout_marginStart="90dp"/>
 
     </RelativeLayout>
-
-
-
-
-
-
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -9,8 +9,6 @@
 
 
 
-        <color name="colorBotonEncendido">#FF5733</color> <!-- Color cuando el LED está encendido -->
-        <color name="colorBotonApagado">#33FF57</color> <!-- Color cuando el LED está apagado -->
 
 
 </resources>

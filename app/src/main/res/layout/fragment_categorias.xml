@@ -16,84 +16,135 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
         android:id="@+id/principal2">
-
-        <Spinner
-            android:id="@+id/IdDisEncontrados"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            style="@style/SpinnerStyle"
-            android:visibility="visible"/>
-
-
-
-        <ImageView
-            android:id="@+id/buscarimagen"
-            android:layout_marginTop="70dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/buscar"
-            android:layout_below="@+id/principal2"
-            android:layout_width="230dp"
-            android:layout_height="230dp"
-            tools:ignore="NotSibling" />
-        <Button
-            android:fontFamily="@font/texto"
-            android:textAlignment="center"
-            android:id="@+id/IdBtnBuscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BUSCAR DISPOSITIVO"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="15dp"
-            android:background="@drawable/custom_button_background"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_below="@+id/buscarimagen"
-            android:layout_centerHorizontal="true" />
         <TextView
-            android:background="@color/colorbbt"
-            android:layout_below="@+id/IdBtnBuscar"
-            android:id="@+id/textViewDistance"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:text="Distancia:                                                              "
-            android:textColor="#FF0000"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#01375C"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp" />
+            android:fontFamily="@font/tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESCOJE TU ROTOPLAS IDEAL"
+            android:id="@+id/escojer"/>
+        <LinearLayout
+            android:id="@+id/diferente"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/escojer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/rotoplas_450"
+                android:layout_width="110dp"
+                android:layout_height="120dp"/>
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rotoplas_600"
+                android:layout_width="110dp"
+                android:layout_height="120dp"/>
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rotoplas_750"
+                android:layout_width="110dp"
+                android:layout_height="120dp"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/diferente3"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/diferente"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="450LT"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="600LT"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="86dp"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="750LT"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/diferente2"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/diferente3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:background="@drawable/rotoplas_1100"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:background="@drawable/tinaco_2500"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/diferente4"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/diferente2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="1100LT"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:textColor="@color/black"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="2500LT"/>
+        </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/IdBtnBuscar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="625dp"
             android:background="@drawable/rounded_background"
             android:gravity="start"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <Button
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/texto"
                 android:textAlignment="center"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:background="@drawable/custom_button_background"
-                android:id="@+id/IdBtnConectar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="40dp"
-                android:text="CONECTAR"/>
-
-            <Button
-                android:fontFamily="@font/texto"
-                android:textAlignment="center"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:background="@drawable/custom_button_background"
@@ -101,9 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="40dp"
-                android:text="DESCONECTAR"
+                android:text="GUARDAR"
                />
 
         </LinearLayout>
